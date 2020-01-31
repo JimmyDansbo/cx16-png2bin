@@ -15,7 +15,7 @@ if (isset($_FILES['ftu'])) {
 	switch ($_POST['bpp']) {
 		case 2: $bpp=2; break;
 		case 8: $bpp=8; break;
-		default: $bpp=2; break;
+		default: $bpp=4; break;
 	}
 	$addr = $_POST['addr'];
 	if ($addr != "") {
