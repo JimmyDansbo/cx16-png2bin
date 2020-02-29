@@ -164,7 +164,7 @@ function rgb24to12($image, $colorindex) {
 		$green = ($rgb['green']>>4);
 		$blue = ($rgb['blue']>>4);
 
-		$retstr=sprintf("$%02X%02X", (($green&0x0f)<<4)|($blue&0x0f),(0x0f&$red));
+		$retstr=sprintf("$%02X%02X", (0x0f&$red),(($green&0x0f)<<4)|($blue&0x0f));
 
 		return $retstr;
 	} else return FALSE;
